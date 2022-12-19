@@ -9,13 +9,13 @@ import { router as createUser } from './routes/createUser.js';
 import { router as login } from './routes/login.js';
 import { router as register } from './routes/register.js';
 
-//dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
-const port = 3006;
-const host = "localhost";
+const port = process.env.PORT;
+const host = process.env.HOST;
 
 const main = async () => {
-    await mongoose.connect('mongodb+srv://hochungyan:aCOwQdsrALm9rEgw@cluster0.p6cyacc.mongodb.net/?retryWrites=true&w=majority');
+    await mongoose.connect(process.env.DB_URI);
 }
 
 main().catch(error => console.log(error));
