@@ -10,7 +10,7 @@ function CreatePeep({ user, peeps, setPeeps, setLoggedIn }) {
     const createPeep = async (e) => {
         e.preventDefault();
         setAuthor(user.name);
-        const res = await axios.post("http://localhost:3006/createPeep", { title, message, author })
+        const res = await axios.post("https://chitter-challenge-xbbf.onrender.com/createPeep", { title, message, author })
         //Call the reload method on the window object to refresh the page
         window.location.reload();
         setPeeps([...peeps, { title, message, author }])
