@@ -1,10 +1,7 @@
 Chitter Challenge
 =================
 
-* Feel free to use Google, your notes, books, etc. but work on your own
-* If you refer to the solution of another coach or trainee, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit your work by 9:30am Monday morning
+This project is deployed using AWS Amplify[Click here](https://main.dvrbmyef6axp3.amplifyapp.com/).
 
 Challenge:
 -------
