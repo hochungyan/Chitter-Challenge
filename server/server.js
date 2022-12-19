@@ -15,7 +15,7 @@ const port = 3006;
 const host = process.env.HOST;
 
 const main = async () => {
-    await mongoose.connect(process.env.DB_URI);
+    await mongoose.connect('mongodb+srv://hochungyan:aCOwQdsrALm9rEgw@cluster0.p6cyacc.mongodb.net/?retryWrites=true&w=majority');
 }
 
 main().catch(error => console.log(error));
