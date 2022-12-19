@@ -5,8 +5,8 @@
   "scripts": {
     "test": "SET NODE_ENV=test&& mocha --timeout=10000 --exit",
     "start": "SET NODE_ENV=dev&&nodemon server",
-    "build": "NODE_ENV=dev&&nodemon server"
-  },
+    "build": "cross-env NODE_ENV=dev node server.js"
+     },
   "dependencies": {
     "axios": "^1.2.0",
     "chai-http": "^4.3.0",
