@@ -5,7 +5,7 @@ import moment from 'moment';
 function Left({ user, peeps, setPeeps }) {
 
     useEffect(() => {
-        axios.get("http://localhost:3006/getPeeps").then((response) => {
+        axios.get("https://chitter-challenge-xbbf.onrender.com/getPeeps").then((response) => {
             setPeeps(response.data);
         })
     }, []);
