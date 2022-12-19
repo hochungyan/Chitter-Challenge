@@ -11,7 +11,7 @@ import { router as register } from './routes/register.js';
 
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
-const port = process.env.PORT;
+const port = 3006;
 const host = process.env.HOST;
 
 const main = async () => {
