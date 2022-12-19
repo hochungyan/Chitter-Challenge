@@ -25,7 +25,7 @@ const Register = () => {
         e.preventDefault();
         const { name, email, password } = user;
         if (name && email && password) {
-            const res = await axios.post(`http://localhost:3006/register`, user);
+            const res = await axios.post(`https://chitter-challenge-xbbf.onrender.com/register`, user);
             alert(res.data.message);
             return;
         }

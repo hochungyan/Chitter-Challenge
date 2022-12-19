@@ -22,7 +22,7 @@ const Login = ({ setLoginUser }) => {
     const login = async (e) => {
         e.preventDefault();
 
-        const res = await axios.post(`http://localhost:3006/login`, user);
+        const res = await axios.post(`https://chitter-challenge-xbbf.onrender.com/login`, user);
         alert(res.data.message);
         setLoggedIn(res.data.user ? true : false);
         setUser({ email: ``, password: `` });
