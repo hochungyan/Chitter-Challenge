@@ -1,7 +1,8 @@
 Chitter Challenge
 =================
 
-This project is deployed using AWS Amplify[Click here](https://main.dvrbmyef6axp3.amplifyapp.com/).
+The Frontend of the project is deployed using AWS Amplify[Click here](https://main.d9f4dzlr8u60z.amplifyapp.com/).
+The Backend of the project is deployed using Render.
 
 Challenge:
 -------
