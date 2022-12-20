@@ -11,11 +11,12 @@ function CreatePeep({ user, peeps, setPeeps, setLoggedIn }) {
         e.preventDefault();
         setAuthor(user.name);
         const res = await axios.post("https://chitter-challenge-xbbf.onrender.com/createPeep", { title, message, author })
+        alert(res.data.message);
         //Call the reload method on the window object to refresh the page
-        window.location.reload();
+        //window.location.reload();
         setPeeps([...peeps, { title, message, author }])
         clearInputs();
-       return;
+        
     }
 
 
